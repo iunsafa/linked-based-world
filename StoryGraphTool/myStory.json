@@ -1,0 +1,133 @@
+{
+    "Title": "Campus Life on the West Side",
+    "Credits": "Created by Adam Smith (amsmith@ucsc.edu).",
+    "InitialLocation": "Kresge",
+    "PlayerHasIDCard": false,
+    "Locations": {
+        "Kresge": {
+            "Body": "This is Kresge College, lots of nice trees.",
+            "Choices": [
+                {
+                    "Text": "South",
+                    "Target": "Porter"
+                }
+            ]
+        },
+        "Porter": {
+            "Body": "This is Porter College, the trees are nice here too.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Kresge"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Dining Hall",
+                    "Target": "Porter Dining Hall",
+                    "RequireIDCard": true
+                }
+            ]
+        },
+        "Porter Dining Hall": {
+            "Body": "This is Porter Dining Hall, you can eat next outside next to nature!",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Kresge"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "Eat some food :)",
+                    "Target": "Porter Dining Hall"
+                }
+            ]
+        },
+        "Rachel Carson": {
+            "Body": "Rachel Carson College, more sun and fewer trees.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Porter"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Oakes"
+                },
+                {
+                    "Text": "Dining Hall",
+                    "Target": "Rachel Carson Dining Hall",
+                    "RequireIDCard": true
+                },
+                {
+                    "Text": "Dorm",
+                    "Target": "Dorm"
+                }
+            ]
+        },
+        "Rachel Carson Dining Hall": {
+            "Body": "This is Rachel Carson Dining Hall, the new and improved dining hall for all!",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Porter"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Oakes"
+                },
+                {
+                    "Text": "Eat some food :)",
+                    "Target": "Rachel Carson Dining Hall"
+                }
+            ]
+        },
+        "Dorm": {
+            "Body": "This is the dorm. Maybe you can obtain something from here that can be useful?",
+            "Choices": [
+                {
+                    "Text": "ID Card",
+                    "Target": "Card Obtained"
+                }
+            ]
+        },
+        "Card Obtained": {
+            "Body": "You have obtained an ID Card",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Porter"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Oakes"
+                },
+                {
+                    "Text": "Dining Hall",
+                    "Target": "Rachel Carson Dining Hall"
+                }
+            ]
+        },
+        "Oakes": {
+            "Body": "Oakes College, even the buildings have tree bark on them.",
+            "Choices": [
+                {
+                    "Text": "North",
+                    "Target": "Rachel Carson"
+                },
+                {
+                    "Text": "South",
+                    "Target": "Beyond"
+                }
+            ]
+        },
+        "Beyond": {
+            "Body": "Grass, don't forget to check for ticks!"
+        }
+    }
+}
